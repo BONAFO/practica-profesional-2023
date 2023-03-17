@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <div>
+        <h1 id="active-title"></h1>
+        <h1 id="active-answer"></h1>
+    </div>
+    <br>
+    <div id="calculator" hidden>
+        <input type="number" id="num1" placeholder="Primer Numero"
+            onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57">
+        <br><br>
+        <input type="number" id="num2" placeholder="Segundo Numero"
+            onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57">
+        <br> <br>
+        <input type="radio" value="add" name="operation">
+        <label for="add">SUMAR</label>
+        <input type="radio" value="subtract" name="operation">
+        <label for="subtract">RESTAR</label>
+        <input type="radio" value="split" name="operation">
+        <label for="split">DIVIDIR</label>
+        <input type="radio" value="multiply" name="operation">
+        <label for="multiply">MULTIPLICAR</label>
+        <br><br>
+        <button id="calculate">CALCULAR</button>
+    </div>
+    <br>
+    <div>
+        <button id="exce1-btn">MOSTRAR RESPUESTA EJERCICIO 1</button><br>
+        <button id="exce2-btn">MOSTRAR RESPUESTA EJERCICIO 2</button><br>
+        <button id="exce3-btn">MOSTRAR RESPUESTA EJERCICIO 3</button><br>
+        <button id="exce4-btn">MOSTRAR RESPUESTA EJERCICIO 4</button><br>
+
+    </div>
+    <script src="resources.js"></script>
+    <script src="exercise_1.js"></script>
+    <script src="exercise_2.js"></script>
+    <script src="exercise_3.js"></script>
+    <script src="exercise_4.js"></script>
+</body>
+
+</html>
